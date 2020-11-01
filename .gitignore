@@ -1,4 +1,5 @@
 .coverage
+.direnv
 .envrc
 coverage_html_report
 # Byte-compiled / optimized / DLL files

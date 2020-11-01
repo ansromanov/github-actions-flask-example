@@ -1,7 +1,7 @@
 [run]
 command_line = -m pytest
 source = .
-omit = ./venv/*
+omit = venv/*,.direnv/*
 
 [report]
 ignore_errors = True

@@ -5,12 +5,20 @@ Sample Flask app with CI
 Run app
 
 ```sh
+flask run
 
+ * Serving Flask app "app.py" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 207-112-103
 ```
 
 Execute tests and get coverage report
 
- ```sh
+```sh
 coverage run
 ============================================================ test session starts ============================================================
 platform darwin -- Python 3.7.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /Users/aromanov/projects/github-actions-flask/venv/bin/python3
