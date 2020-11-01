@@ -1,5 +1,6 @@
 from flask import request, jsonify
 
+
 def set_routes(app):
 
     def validate_post_data(data: dict) -> bool:
@@ -33,5 +34,5 @@ def set_routes(app):
                 return jsonify({'status': 'OK'})
             else:
                 return jsonify({'status': 'bad input'}), 400
-        
+
         return 'Hello World!'

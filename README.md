@@ -1,4 +1,5 @@
 # Sample app
+Sample Flask app with CI
 
 ## Run app
 Run app
