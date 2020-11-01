@@ -1,3 +1,10 @@
 [run]
-source= .
-omit= ./venv/*
+command_line = -m pytest
+source = .
+omit = ./venv/*
+
+[report]
+ignore_errors = True
+
+[html]
+directory = coverage_html_report

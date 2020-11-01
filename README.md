@@ -11,7 +11,7 @@ Run app
 Execute tests and get coverage report
 
  ```sh
-coverage run -m pytest -v
+coverage run
 ============================================================ test session starts ============================================================
 platform darwin -- Python 3.7.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /Users/aromanov/projects/github-actions-flask/venv/bin/python3
 cachedir: .pytest_cache
