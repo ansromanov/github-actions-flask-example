@@ -10,7 +10,7 @@ Run app
 Execute tests and get coverage report
 
  ```sh
-coverage run --include tests.py -m unittest -v
+coverage run --include unittests.py -m unittest -v
 
 test_bad_age_post_api_endpoint (tests.FlaskAppTests) ... ok
 test_correct_post_api_endpoint (tests.FlaskAppTests) ... ok
