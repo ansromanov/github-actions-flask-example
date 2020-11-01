@@ -1,8 +1,8 @@
-# Sample app
-Sample Flask app with CI
+# Sample Flask app integrated with GitHub actions
+Sample Flask app with CI part configured using GitHub actions
 
-## Run app
-Run app
+## Run application
+Run application
 
 ```sh
 flask run

@@ -4,6 +4,7 @@
 coverage_html_report
 # Byte-compiled / optimized / DLL files
 __pycache__
+__pycache__/*
 __pycache__/
 *.py[cod]
 *$py.class

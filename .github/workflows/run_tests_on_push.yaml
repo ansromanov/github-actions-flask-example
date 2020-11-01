@@ -43,3 +43,7 @@ jobs:
       - name: Create coverage report
         run: |
           coverage report
+
+      - name: Create HTML report
+        run: |
+          coverage html
