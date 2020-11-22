@@ -1,14 +1,17 @@
-name: Run unit tests on push
+name: Run unit tests
 
 on:
   push:
+    # except any tags
     tags:
       - '!refs/tags/*'
     branches:
-      - '*'
+      - main
+      - 'refs/heads/feature/*'
+      - 'refs/heads/bugfix/*'
   pull_request:
     branches:
-      - '*'
+      - main
 
 jobs:
   run_tests:
@@ -59,4 +62,12 @@ jobs:
 
       - name: Create HTML report
         run: |
-          coverage html
+          coverage html --directory=coverage_html_report/report-${{ matrix.os }}-${{ matrix.python-version }}
+     
+      - name: Upload coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report-${{ matrix.os }}-${{ matrix.python-version }}
+          path: coverage_html_report/report-${{ matrix.os }}-${{ matrix.python-version }}
+        # Use always() to always run this step to publish test results when there are test failures
+        if: ${{ always() }}
