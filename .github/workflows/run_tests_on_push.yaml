@@ -2,9 +2,6 @@ name: Run unit tests
 
 on:
   push:
-    # except any tags
-    tags:
-      - '!refs/tags/*'
     branches:
       - main
       - 'refs/heads/feature/*'
