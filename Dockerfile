@@ -1,5 +1,7 @@
 FROM python:3.9-alpine
 
+LABEL org.opencontainers.image.source https://github.com/ansromanov/github-actions-flask-example
+
 RUN apk update
 COPY setup.py app/setup.py
 COPY requirements.txt app/requirements.txt
